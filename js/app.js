@@ -44,7 +44,6 @@ const AppInterface = {
     return result_string;
   },
   populateDivWithHTML: function(result_string, total_result) {
-    console.log(result_string);
     var container = document.querySelector("#insure_list_result"),
       result_list_div = container.querySelector("#insure_avail_list"),
       result_count_div = container.querySelector("#insure_avail_count");
@@ -84,7 +83,6 @@ insure_form_submit.onsubmit = function(el) {
     }, {});
 
   setTimeout(function() {
-    console.log("me after 1000 mili seconds");
     loader.classList.add("display-none");
     form.classList.add("display-none");
     insure_list_result.classList.remove("display-none");
